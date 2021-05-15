@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: aliceblue;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Almarai', sans-serif;
+    height: 890px;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Start Navbar */
+
+.navbar {
+    background-color: #1d3557;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+
+
+}
+ .navbar-light .navbar-toggler-icon {
+    background-image: url(../image/navbar/burger-button-removebg-preview.png);
+    border: 1px solid #1f75ee;
+} 
+.navbar .navbar-brand img {
+    height: 80px;
+    width: 350px;
+    margin-right: 20px;
+}
+.navbar-expand-lg .collapse .navbar-nav .nav-item a {
+
+    color: #fca311;
+    font-size: 17px;
+    margin: 5px;
+}
+.navbar-expand-lg .collapse .navbar-nav {
+
+    margin-right: auto;
+}
+.navbar-expand-lg .collapse .navbar-nav .nav-item  a.active {
+color: white;
+}
+.navbar-expand-lg .collapse .navbar-nav .nav-item a:hover {
+color: white;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+
+/* End navbar */
+
+.latest-news {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.latest-news .row .card{
+    border: 2px solid #1b5db9;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 50px;
+    min-height: 500px;
+}
+.latest-news h2 {
+
+    position: relative;
+    padding: 20px;
+    color: #1b5db9;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+.latest-news h2::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    margin-left: -25px;
+    height: 10px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: #1d3557;
+    z-index: 10;
+}
+.latest-news h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -90px;
+    height: 3px;
+    width: 180px;
+    border-radius: 20px;
+    background-color: #fca311;
+
+}
+
+.latest-news .card span {
+color: rgba(143, 143, 143, 0.699);
+}
+.latest-news .card h5 {
+    color: #1b5db9;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-decoration: unset;
+}
+.latest-news .card p {
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+@media (max-width: 575.98px){
+    #myBtn {
+        right: 7px;
+    }
+}
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+/* Start Footer */
+
+.capyright  {
+
+    border-top: 5px solid #8fbbf8;
+    background-color: #1d3557;
+
+}
+
+.capyright  p {
+    color:  #fca311;
+    text-align: center;
+    padding: 20px;
+}
+/* End Footer */
